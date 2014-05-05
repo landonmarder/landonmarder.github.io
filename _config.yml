@@ -11,20 +11,20 @@ theme:
 
   # Profile links on the left sidebar, leave blank to ignore
   social:
-    github: swanson
+    github: landonmarder
     #bitbucket: philipj
-    hacker_news: swanson
+    hacker_news: reyvantiki
     #stackexchange: 348619
     #stackoverflow: 348619
-    twitter: _swanson
+    twitter: landonmarder
     #facebook: zuck
     #tumblr: animalygifs
-    #linkedin: philipjagielski
+    linkedin: landonmarder
     #gplus: 110552447039675960964
 
   # "Hi, I'm _______"
-  name: Matt Swanson
-  email: test@example.com
+  name: Landon Marder
+  email: landon.marder@gmail.com
   tagline: "weak opinions, strongly held"
 
   # Google Analytics key, leave blank to ignore
