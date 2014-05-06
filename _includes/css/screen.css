@@ -53,8 +53,8 @@ a {
 }
 
 a:hover {
-  color: {{ site.theme.highlight_color }};
-  text-decoration: underline;
+  color: {{ site.theme.hover_color }} !important;
+  text-decoration: none;
 }
 
 a:visited {
