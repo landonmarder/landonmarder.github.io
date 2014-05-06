@@ -10,7 +10,7 @@ I made my first iPhone App this past week. It is an app for 6th grade students t
 
 Here is a YouTube demo of the app (couldn't pull the trigger on an Apple developer account just yet to put it live):
 
-<iframe frameborder=\"0\" height=\"315\" src=\"//www.youtube.com/embed/YZ_lPPVq5Jc\" width=\"420\"></iframe>
+<iframe frameborder="0" height="400" src="//www.youtube.com/embed/YZ_lPPVq5Jc" width="420"></iframe>
 
 **Pros:**
 
