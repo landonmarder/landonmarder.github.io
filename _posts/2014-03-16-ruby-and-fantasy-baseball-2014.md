@@ -4,6 +4,7 @@ title: Fantasy Baseball and Ruby
 categories:
 - ruby
 - fantasy baseball
+- kimono labs
 ---
 
 It seems silly, but one of the things I really wanted to do once I learned to program was to use it to improve my fantasy sports teams. I play fantasy baseball, football, and basketball with 12+ of my childhood friends, but I am historically in the bottom of the league.
