@@ -14,4 +14,4 @@ Knowing that if I were able to get my data structured into json I could access i
 
 Check out this gist (or the github link to my [sample repo](https://github.com/landonmarder/google_drive_ruby)) for the Ruby of getting your spreadsheet from Google into json and a commented out sample of what the ERB in your Middleman app will look like to get the data from the json.
 
-[gist](https://gist.github.com/landonmarder/9714032)
+[Github Gist](https://gist.github.com/landonmarder/9714032)
