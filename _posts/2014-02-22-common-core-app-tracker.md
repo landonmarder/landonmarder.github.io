@@ -2,6 +2,8 @@
 layout: post
 title: Common Core Mastery Tracker PhoneGap App
 categories:
+- posts
+tags:
 - phonegap
 - edtech
 ---

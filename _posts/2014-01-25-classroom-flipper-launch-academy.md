@@ -2,6 +2,8 @@
 layout: post
 title: Introduction to the Classroom Flipper
 categories:
+- posts
+tags:
 - ruby
 - rails
 - launchacademy
