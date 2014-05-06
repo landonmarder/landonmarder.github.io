@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fantasy Baseball and Ruby
+title: Fantasy Baseball and Ruby with Kimono Labs API
 categories:
 - ruby
 - fantasy baseball
