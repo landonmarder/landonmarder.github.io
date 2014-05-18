@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book Notes for Ambitious Ember Application
+title: Book Notes for Ambitious Ember Applications
 categories:
 - posts
 tags:
