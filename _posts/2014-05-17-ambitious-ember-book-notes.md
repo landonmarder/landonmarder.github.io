@@ -62,3 +62,11 @@ Chapter 4: Routing, View Tree and Naming Conventions
 
 Chapter 5: First Tests
 ---
+- The runner.js file intercepts the index.html?test request and sets everything up for testing our application and then it loads test.js which contains the actual tests
+- 'Wait until our application is idle' === all promises and other async behaviors resolves
+- Ember Starter Kit uses QUnit
+- Run test by adding ?test to URL
+
+Chapter 6: Working with Real Data
+---
+
