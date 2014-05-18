@@ -24,7 +24,7 @@ Chapter 2
 - Ember will always redner other templates into {{outlet}} expression
 - Whenever you request a route by changing the URL, Ember will render the template that belongs to the route requested
 - **Debugging trick**, set LOG_TRANSITIONS to true to log a message everytime the URL changes
-- {{link-to}} block expression accepts different arguments, Handlebars will take the link-to block and parse it into regular <a></a> tag
+- link_to block expression accepts different arguments, Handlebars will take the link-to block and parse it into regular <a></a> tag
 - Ember gives you .active for free, currently active link gets the .active class
 - **Convention over configuration**, Ember will match the URL to the template's name and render the needed content
 
