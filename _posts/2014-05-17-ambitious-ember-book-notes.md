@@ -18,7 +18,7 @@ Chapter 1
 ---
 - Download the [Ember Starter Kit](http://www.emberjs.com) for quick start
 
-Chapter 2
+Chapter 2: First Template, First Routes
 ---
 - Template without an ID is an application template, will be rendered on each page by default
 - Ember will always redner other templates into {{outlet}} expression
@@ -29,5 +29,36 @@ Chapter 2
 - **Convention over configuration**, Ember will match the URL to the template's name and render the needed content
 
 
-Chapter 3
+Chapter 3: Controllers
+---
+- Controller in Ember is responsible for decorating data before presenting it to the user
+ (middleman sitting between your data source and your user, translating language of one into another)
+ - Properties written inside a controller will be available inside our templates
+ - Ember uses metamorph script tags to wrap properties we set in our controller so it can easily identify them and update if needed (so cannot use straight-up properties within a HTML tag because it will be HTML within HTML -- need to use bound attributes)
+ - To explicitly tell our controller that a property is indeed a property and can be called inside our template we need to add .property() method at the end of the function
+{% highlight javascript %}
+App.IndexController = Ember.Controller.extend({
+  currentTime: function() {
+    return(new Date);
+  }.property()
+});
+{% endhighlight %}
+- There are two controller types: ArrayController and ObjectController
+- ObjectController: used to represent a single model
+- ArrayController: used to represent an array of models (consist of many ObjectController's for each model in array)
+
+Chapter 4: Routing, View Tree and Naming Conventions
+---
+- We have an application. An application has a router which receives requests made by user (represented by URLs and typed into the browser address bar) and then the router sends users requests to the controller. The controller decorates our data and sends teh data to the template. The template displays data to the user.
+- The route gives the data to the controller. Route objects are responsible for loading data from defined data storage and providing data to the controller.
+- Ember expects model property of a route object to return either an object or an array
+- Iterating through objects passed in through the ArrayController:
+{% highlight javascript %}
+{{#each}}
+  <li>{{title}} - asked by {{author}}</li>
+{{/each}}
+{% endhighlight %}
+- Ember objects (templates, controllers, router, routes) can be linked to one another by setting the correct names
+
+Chapter 5: First Tests
 ---
