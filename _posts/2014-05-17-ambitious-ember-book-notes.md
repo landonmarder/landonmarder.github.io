@@ -8,11 +8,9 @@ tags:
 - book notes
 ---
 
-[Ambitious Ember Applications](https://leanpub.com/emberjs_applications)
-===
-By [Ruslan Yakhyaev](https://twitter.com/ryakh)
+A challenge to reading a technical book is to figure out where to best put your notes. In the past, I have used physical notebooks or Evernote. I figured I would try putting my notes on here as an experiment to see if it improves my comprehension and learning.
 
-A challenge to reading a technical book is to figure out where to best put your notes. In the past, I have used physical notebooks or Evernote. I figured I would try putting my notes on here as an experiment.
+[Ambitious Ember Applications](https://leanpub.com/emberjs_applications) By [Ruslan Yakhyaev](https://twitter.com/ryakh).
 
 Chapter 1
 ---
