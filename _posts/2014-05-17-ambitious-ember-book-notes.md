@@ -55,7 +55,7 @@ Chapter 4: Routing, View Tree and Naming Conventions
 - Iterating through objects passed in through the ArrayController:
 {% highlight javascript %}
 {{#each}}
-  <li>{{title}} - asked by {{author}}</li>
+  <li>{{attributeOne}} - {{attributeTwo}}</li>
 {{/each}}
 {% endhighlight %}
 - Ember objects (templates, controllers, router, routes) can be linked to one another by setting the correct names
@@ -69,4 +69,23 @@ Chapter 5: First Tests
 
 Chapter 6: Working with Real Data
 ---
-
+- Ember gives an ability to define our application store (store will contain all of the data for records loaded from the external source)
+- Inside the store we need to provide an adapter which will tell Ember where from the data should be loaded from
+- Define the store using the Fixture adapter (fixtures represent data hardcoded into separate files -- similar to JSON response)
+- Fixtures should each have a unique ID, does not have to be in a sequence of any kind
+- Once we tell Ember where to fetch data from, it will do so and store the data in the store. Later we can fetch the data from the store inside our routes
+- Need to define the properties and behavior of the data before we can present it to the user (we do this by creating a model object)
+- Need to define the model property inside the Route
+{% highlight javascript %}
+App.IndexRoute = Ember.Route.extend({
+  model: function() {
+    return this.store.findAll('model');
+  }
+});
+{% endhighlight %}
+- Dynamic segments is a portion of a path that starts with a colon(:) and is followed by an identifier
+- Resource is a thing (a model) and a route is something that you do with the model
+{% highlight javascript %}
+this.resource('model', { path: '/:model_id' })
+{% endhighlight %}
+- Ember's routes make use of promises (objects that can potentially be resolved into any value, can be fulfilled or rejected)
