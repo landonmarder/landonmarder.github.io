@@ -87,3 +87,14 @@ App.IndexRoute = Ember.Route.extend({
 this.resource('model', { path: '/:model_id' })
 {% endhighlight %}
 - Ember's routes make use of promises (objects that can potentially be resolved into any value, can be fulfilled or rejected)
+
+Chapter 7: Relating Models
+===
+- Ember Data includes several built-in relationshpi types to help you define how your models relate to each other
+- Think of Fixtures as the hardcoded data and Models as how the data is structured (schema)
+- Async true -- tells Ember to load data asynchronously from teh server
+- Ember offers three types of relations out of the box: one-to-one, one-to-many, many-to-many
+- Need to have both fixtures and models referenced in script tags (watch out for spelling mistakes)
+
+Chapter 8: Managing the Authentication
+===
