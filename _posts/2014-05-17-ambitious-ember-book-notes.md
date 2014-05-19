@@ -98,3 +98,32 @@ Chapter 7: Relating Models
 
 Chapter 8: Managing the Authentication
 ===
+- The server will tell you what kind of info it needs to authenticate and requests you to provide that informatoin. You send info back to the server and the server will provide you with authentication token which you can later use to tell the server you've been authenticated
+- We need a place to store the authentication token and in certain parts of our application check to see if a user has the unique authentication string
+- Keep a value stored in localStorage to determine whether a user is logged in or not
+- **Uncaught Error: Nothing handled the action 'action'** - means we need to implement an action inside the proper controller
+- To access a property from other controllers available in the current controller, we need to provide a 'need' property inside the controller
+{% highlight javascript %}
+App.SecondController = Ember.Controller.extend({
+  needs: ['firstController']
+});
+{% endhighlight %}
+- When you are telling a controller it needs another controller, you need to provide the other controller's name downcased with the 'Controller' part omitted
+- Can put actions in either controller, but think of which template it will be used most in and put the action in there
+- Ember allows us to create properties that are bound to other values inside our application. Once the bound value changes, Ember will automatically update all properties that depend on it
+- Ember can't track external objects and other JS variables set outside of Ember, so need to store new Ember variables for external objects like localStorage
+- Can change scope of a variable globally in Ember
+{% highlight javascript %}
+App.set('globalVariable', 'newValue');
+{% endhighlight %}
+- Can have functions changed 'live' with the new global Ember variable being changed by passing the global variable into the parameter of property at the end of the function
+{% highlight javascript %}
+App.ApplicationController = Ember.extend({
+  importantFunction: function(){
+    return globalVariable;
+  }.property('App.globalVariable')
+})
+{% endhighlight %}
+
+Chapter 9: Asking Our First Question
+===
