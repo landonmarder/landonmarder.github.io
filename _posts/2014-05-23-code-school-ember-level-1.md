@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Video Notes for Code School Ember: Level 1
+title: Video Notes for Code School Ember - Level 1
 categories:
 - posts
 tags:
@@ -8,11 +8,12 @@ tags:
 - book notes
 ---
 
+I find that I am a better learner when I attack learning through different mediums and through different points of view. In conjunction with reading Ambitious Ember Applications, I am also watching the [Code School](ember.codeschool.com/) videos on Ember. I will be posting my notes from these videos for you (and myself).
+
+
 Setting Up Ember
-===
-- Pulls data and render templates through APIs
-- Ember data is used for pulling from an API
-- Depends on jQuery, handlebars, ember, ember-data
+---
+- Ember depends on jQuery, handlebars, ember, ember-data
 - We need a single object to contain all the functionality of our app (namespaced as App), think of it as the root of the app, everything grows from here
 {% highlight javascript %}
 var App = Ember.Application.create({ });
@@ -27,8 +28,9 @@ var App = Ember.Application.create({ });
 - Each Handlebar template is in a unique div
 - Handlebars works just like HTML, uses handlebars for templating, the part of the application that people see
 
+
 Named Templates
-===
+---
 - Handlebar expressions allow us to insert expressions into out HTML
 - Name templates
 {% highlight javascript %}
@@ -38,13 +40,11 @@ Named Templates
 {% endhighlight %}
 - We need a way to tell our templates where to render on the page
 - Handlebar expression outlet gives our code a hint as to where templates should be inserted
-{% highlight javascript %}
-{{outlet}}
-{% endhighlight %}
 - If our application template hits an outlet, it is going to look for a template named index and render that in the place of outlet
 
+
 The Router
-===
+---
 - How do we render other templates besides the index template and map it to a URL?
 - Ember Router translates a path into a route
 - All requests start at the router

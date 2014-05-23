@@ -126,4 +126,4 @@ App.ApplicationController = Ember.extend({
 {% endhighlight %}
 
 Chapter 9: Asking Our First Question
-===
+---
