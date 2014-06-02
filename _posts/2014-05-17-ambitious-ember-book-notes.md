@@ -127,3 +127,36 @@ App.ApplicationController = Ember.extend({
 
 Chapter 9: Asking Our First Question
 ---
+- Don't rely on Ember to manage user permissions, (Ember is client side so user will be able to download all the code), be sure to check for permission
+- In a form, tell Ember to create a property name question on the controller and keep it in sync with the value entered into the text area
+{% highlight html %}
+{{textarea id="question" value=question}}
+{% endhighlight %}
+- signedInUser method returns a promise, not an actual User record, so need to wait for the promise to be resolved
+{% highlight javascript %}
+this.get('controllers.application.signedInUser').then(function(user){
+  // Do stuff with the user record
+})
+{% endhighlight %}
+- Need to clean the form after you save the record (set form fields to '')
+- To get provide the controller with data:
+{% highlight javascript %}
+App.AskQuestionController = Ember.ArrayController.extend({
+  model: function() {
+  return this.store.findAll('question');
+  // return this.store.findAll('question', { order: 'date' });
+  }
+})
+{% endhighlight %}
+- Can sort your data on the client side or the server side
+- In our controllers, we create the functions that we can call using handlebars. Example, a controller has a latestQuestions function in it, can iterate through the latestQuestions using handlebars
+- To ensure that the context refers to all objects (including ones that are being created on the fly)
+{% highlight javascript %}
+}.property(@each)
+{% endhighlight %}
+- Redirect route
+{% highlight javascript %}
+controller.transitionToRoute('question', question);
+{% endhighlight %}
+
+Chapter 10: Answering Questions
