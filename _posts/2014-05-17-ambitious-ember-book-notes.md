@@ -160,3 +160,35 @@ controller.transitionToRoute('question', question);
 {% endhighlight %}
 
 Chapter 10: Answering Questions
+---
+- Flow of adding a record: create a new record locally, store the record in the store (forcing the synchronization of the store from the server), clean the record form
+- Mixin is an Ember Class which allows us to add it's properties into other classes
+{% highlight javascript %}
+App.DescribeMixin = Ember.mixin.create({
+  needs: ['application'],
+
+  functionName: function(object){
+    // write function
+  }
+});
+
+App.NameController = Ember.ArrayController.extend({
+  App.DescribeMixin, {
+   // rest of Controller
+  }
+});
+{% endhighlight %}
+- With handlebars, can do each object, and have an else case when there is no object
+ (think of questions with and without answers below it)
+
+Chapter 11: Cleaning Templates Up
+---
+- To define a component in Ember, we need two things: define the template of the component, define the code for the component (Component Object)
+- Component templates should include a hyphen in its name
+- Think of components like partials in Rails
+{% highlight html %}
+<script type="text/x-handlebars" id="components/question-preview">
+<!-- write component in here -->
+</script>
+{% endhighlight %}
+- Components are unaware of it's surroundings and if you want it to have any of the properties available in your template to be available in your component you need to explicitly pass them in (and update component template)
