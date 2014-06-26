@@ -185,10 +185,21 @@ Chapter 11: Cleaning Templates Up
 ---
 - To define a component in Ember, we need two things: define the template of the component, define the code for the component (Component Object)
 - Component templates should include a hyphen in its name
-- Think of components like partials in Rails
 {% highlight html %}
 <script type="text/x-handlebars" id="components/question-preview">
 <!-- write component in here -->
 </script>
 {% endhighlight %}
 - Components are unaware of it's surroundings and if you want it to have any of the properties available in your template to be available in your component you need to explicitly pass them in (and update component template)
+- To display a component, need to call its id inside of handlebars. Also need to pass in the data you want
+{% highlight html %}
+// how you call the template
+{{template-name templateObject=this tagName='li'}}
+{% endhighlight %}
+- In the example above, you can use templateObject inside your template to call that data
+- You can create components for each of your models where you can give specific methods that the models can call (for component templates)
+- To render a partial, you only need a template. Partial templates need to start with an underscore
+- Partial will just insert one template into another. Inside partials have full access to everything the parent partial has. But, are pretty dumb, they only mimic the functionality of the controller template they are inserted into
+- Ember.Components is basically a subclass of Ember.View -- unlike view though, components are completely isolated
+- Unlike components, actions triggered in the view are handled by the controller of the template the view was inserted into
+- Stop @ 11.3
