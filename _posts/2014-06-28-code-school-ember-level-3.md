@@ -96,6 +96,7 @@ App.Router.map(function(){
 - Ember Inspector for Chrome is good for debugging nested routes (routes)
 - ItemIndexRoute gets rendered when you go to the items route (so need to create
   a template for items/index for when no item is selected)
+- The items.index route will render the items/index template and use the ItemsIndexController
 
 **Important vocab**
 ---
