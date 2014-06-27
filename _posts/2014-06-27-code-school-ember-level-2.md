@@ -10,6 +10,8 @@ tags:
 
 To see Level 1 of Code School's Ember notes, check [here](http://landonmarder.com/posts/2014/05/23/code-school-ember-level-1.html).
 
+**Need to go back in and show handlebars and pound signs on markdown**
+
 Handlebar Helpers
 ---
 - Router is in charge of mapping a path to an Ember Route
