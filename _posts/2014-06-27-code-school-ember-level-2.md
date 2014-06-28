@@ -62,4 +62,3 @@ App.BlankController = Ember.Controller.extend({
   }.property()
 });
 {% endhighlight %}
-- Controller is where you are getting your data from

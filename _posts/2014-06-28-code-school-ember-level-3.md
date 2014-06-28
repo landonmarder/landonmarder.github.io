@@ -54,7 +54,7 @@ Dynamic Routes
 {% highlight javascript %}
 App.Router.map(function(){
   this.resource('items');
-  this.resource('item', { path: '/items/:id'} );
+  this.resource('item', { path: '/items/:item_id'} );
 });
 {% endhighlight %}
 - Application will read the :id out of the URL path
@@ -86,7 +86,7 @@ Nested Routes
 {% highlight javascript %}
 App.Router.map(function(){
   this.resource('items', function(){
-    this.resource('item', { path: '/:id'});
+    this.resource('item', { path: '/:item_id'});
   };
 });
 {% endhighlight %}
