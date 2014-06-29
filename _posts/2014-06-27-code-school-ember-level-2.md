@@ -8,7 +8,7 @@ tags:
 - book notes
 ---
 
-To see Level 1 of Code School's Ember notes, check [here](http://landonmarder.com/posts/2014/05/23/code-school-ember-level-1.html).
+To see Level 1 of Code School's Ember notes, check [here](http://landonmarder.com/posts/2014/05/23/code-school-ember-level-1/).
 
 **Need to go back in and show handlebars and pound signs on markdown**
 

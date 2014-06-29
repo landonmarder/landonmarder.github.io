@@ -17,6 +17,6 @@ Over time, I wanted to build my own apps to use on my Smart Board so I started t
 
 **Where I am going:**
 
-Leaving Teach For America, I independently studied Ruby for three months (with a two week MLB baseball stadium road trip sprinkled in) and then joined Launch Academy in November 2013 in Boston. At Launch Academy, I learned Ruby and Rails in a cooperative and flipped classroom educational model It was a great an intensive 10 weeks. During this time, I built [The Classroom Flipper](http://classroom-flipper.herokuapp.com/). Check out this [blog post](http://landonmarder.com/posts/2014/01/25/classroom-flipper-launch-academy.html) to hear more about my reflections on the building process.
+Leaving Teach For America, I independently studied Ruby for three months (with a two week MLB baseball stadium road trip sprinkled in) and then joined Launch Academy in November 2013 in Boston. At Launch Academy, I learned Ruby and Rails in a cooperative and flipped classroom educational model It was a great an intensive 10 weeks. During this time, I built [The Classroom Flipper](http://classroom-flipper.herokuapp.com/). Check out this [blog post](http://landonmarder.com/posts/2014/01/25/classroom-flipper-launch-academy/) to hear more about my reflections on the building process.
 
 This arena will serve as a place for me to reflect on and share what I am learning as a professional web developer
