@@ -33,7 +33,8 @@ we should be using an ArrayController
 - Array Controller has helper methods like sortProperties
 {% highlight javascript %}
 App.ItemsController = Ember.ArrayController.extend({
-    sortProperties: ['title']
+    sortProperties: ['title'],
+    sortAscending: false
 });
 {% endhighlight %}
 - If our model is an array, change the controller to an ArrayController
