@@ -4,6 +4,7 @@ url: http://landonmarder.com/
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
 markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
 
 # Theme customization - please change from the defaults!
 theme:
