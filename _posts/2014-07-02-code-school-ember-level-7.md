@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Video Notes for Code School Ember - Level 6
+title: Video Notes for Code School Ember - Level 7 (not finished yet)
 categories:
 - posts
 tags:
