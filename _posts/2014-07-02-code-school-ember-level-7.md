@@ -43,4 +43,4 @@ App.ItemController = Ember.ObjectController.extend({
 {% endhighlight %}
 - Steps to save an object from the controller: build a new object, save the object, clear out the variables
 - Need to create the variable controller to reference the controller in the save callback
-- Saving an object returns a promise
+- Saving an object returns a promise.
