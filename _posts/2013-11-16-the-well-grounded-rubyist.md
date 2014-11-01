@@ -1,11 +1,9 @@
 ---
 layout: post
 title: The Well Grounded Rubyist
-categories:
-- posts
-tags:
-- ruby
-- Launch Academy
+date: 2013-11-16 10:00:00
+categories: posts
+summary: The biggest piece of advice before starting Launch Academy (besides mentally/physically preparing myself for 12+ hour days of learning to code for 10 weeks) is to get as comfortable as I can get with Ruby.
 ---
 
 The biggest piece of advice before starting Launch Academy (besides mentally/physically preparing myself for 12+ hour days of learning to code for 10 weeks) is to get as comfortable as I can get with Ruby. I had previously worked though the [Codecademy Ruby Track](http://www.codecademy.com/tracks/ruby) and a couple of other online tutorials, which served as a great foundation for reading [The Well-Grounded Rubyist](http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657/ref=sr_1_1?ie=UTF8&qid=1382987281&sr=8-1&keywords=the+well+grounded+rubyist). I really liked reading [The Well-Grounded Rubyist](http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657/ref=sr_1_1?ie=UTF8&qid=1382987281&sr=8-1&keywords=the+well+grounded+rubyist) as the last part of my prework because it gave awesome, detailed explanations of the Ruby language and then supplemented its explanations with nicely labelled code examples. Moreover, it emphasized becoming literate with Ruby.

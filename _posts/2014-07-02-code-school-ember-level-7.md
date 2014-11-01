@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Video Notes for Code School Ember - Level 7 (not finished yet)
-categories:
-- posts
-tags:
-- ember
-- book notes
+title: Video Notes for Code School Ember - Level 7
+categories: posts
+date: 2014-07-02 11:00:00
+summary: Level 7 Code School Ember Notes.
 ---
 
 To see Level 1 of Code School's Ember notes, check [here](http://landonmarder.com/posts/2014/05/23/code-school-ember-level-1/).

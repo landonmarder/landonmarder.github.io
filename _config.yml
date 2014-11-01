@@ -1,37 +1,32 @@
-# General Jekyll Config
-pygments: true
-url: http://landonmarder.com/
-lsi: false
-exclude: [LICENSE, CNAME, README.md, .gitignore]
-markdown: kramdown
-permalink: /:categories/:year/:month/:day/:title/
+# Site settings
+title:       Landon Marder
+email:       landon.marder@gmail.com
+author:      Landon Marder
+description: "Landon Marder is a web developer in NYC."
+baseurl:     ""
+url:         "http://www.landonmarder.com"
 
-# Theme customization - please change from the defaults!
-theme:
-  # Color for top bar, links, etc
-  highlight_color: '#3498db'
-  hover_color: '#79B7E1'
+# Google analytics
+google_analytics: UA-50757512-1
 
-  # Profile links on the left sidebar, leave blank to ignore
-  social:
-    github: landonmarder
-    #bitbucket: philipj
-    # hacker_news: reyvantiki
-    #stackexchange: 348619
-    #stackoverflow: 348619
-    twitter: landonmarder
-    #facebook: zuck
-    #tumblr: animalygifs
-    linkedin: landonmarder
-    #gplus: 110552447039675960964
+# Optional features
+animated:           true
+show_related_posts: false
+show_post_footers:  false
 
-  # "Hi, I'm _______"
-  name: Landon Marder
-  email: landon.marder@gmail.com
-  tagline: "Web developer in NYC."
+# Social icons
+show_social_icons: true
+github_username: landonmarder
+twitter_username: landonmarder
+google_plus_id:
+linkedin_username: landonmarder
+bitcoin_url:
+paypal_url:
+flattr_button:
 
-  # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-50757512-1
-
-  # Toggle "Postings are my own" disclaimer in footer
-  show_disclaimer: false
+# Build settings
+markdown:     kramdown
+permalink:    pretty
+paginate:     3
+sass:
+  compressed: true

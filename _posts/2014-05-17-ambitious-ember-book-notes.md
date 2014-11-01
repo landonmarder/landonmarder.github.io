@@ -1,11 +1,9 @@
 ---
 layout: post
 title: Book Notes for Ambitious Ember Applications
-categories:
-- posts
-tags:
-- ember
-- book notes
+categories: posts
+date: 2014-05-17 11:00:00
+summary: A challenge to reading a technical book is to figure out where to best put your notes. In the past, I have used physical notebooks or Evernote. I figured I would try putting my notes on here as an experiment to see if it improves my comprehension and learning.
 ---
 
 A challenge to reading a technical book is to figure out where to best put your notes. In the past, I have used physical notebooks or Evernote. I figured I would try putting my notes on here as an experiment to see if it improves my comprehension and learning.

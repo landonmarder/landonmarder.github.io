@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Mission Statement
-categories:
-- posts
-tags:
-- mission statement
+categories: posts
+date: 2014-01-01 11:00:00
+summary: My 2014 Mission Statement
 ---
 
 **Where I came from:**

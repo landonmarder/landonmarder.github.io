@@ -1,11 +1,9 @@
 ---
 layout: post
 title: CRUD Actions with Google Calendar and Rails
-categories:
-- posts
-tags:
-- rails
-- google api
+categories: posts
+date: 2014-07-11 11:00:00
+summary: I am going to go through the complete steps of adding, updating, and deleting a event from an Event Dashboard in your Rails app that will also add, update, and delete that event in a corresponding Google Calendar (I am adding, updating, and deleting events to my personal calendar, but you can change the calendarId option in the parameters to any calendar that you have admin access to).
 ---
 
 In a [previous post](http://landonmarder.com/posts/2014/06/04/google-cal-rails/), I talked about setting up Google's OAuth with a Rails app. Today I am going to go through the complete steps of adding, updating, and deleting a event from an Event Dashboard in your Rails app that will also add, update, and delete that event in a corresponding Google Calendar (I am adding, updating, and deleting events to my personal calendar, but you can change the calendarId option in the parameters to any calendar that you have admin access to).

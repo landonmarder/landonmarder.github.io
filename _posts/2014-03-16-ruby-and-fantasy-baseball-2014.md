@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Fantasy Baseball and Ruby with Kimono Labs API
-categories:
-- posts
-tags:
-- ruby
-- fantasy baseball
-- kimono labs
+categories: posts
+date: 2014-03-16 11:00:00
+summary: It seems silly, but one of the things I really wanted to do once I learned to program was to use it to improve my fantasy sports teams. I play fantasy baseball, football, and basketball with 12+ of my childhood friends, but I am historically in the bottom of the league.
 ---
 
 It seems silly, but one of the things I really wanted to do once I learned to program was to use it to improve my fantasy sports teams. I play fantasy baseball, football, and basketball with 12+ of my childhood friends, but I am historically in the bottom of the league.

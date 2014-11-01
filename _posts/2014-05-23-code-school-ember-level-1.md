@@ -1,11 +1,9 @@
 ---
 layout: post
 title: Video Notes for Code School Ember - Level 1
-categories:
-- posts
-tags:
-- ember
-- book notes
+categories: posts
+date: 2014-05-23 11:00:00
+summary: Level 1 Code School Ember Notes.
 ---
 
 I find that I am a better learner when I attack learning through different mediums and through different points of view. In conjunction with reading Ambitious Ember Applications, I am also watching the [Code School](ember.codeschool.com/) videos on Ember. I will be posting my notes from these videos for you (and myself).

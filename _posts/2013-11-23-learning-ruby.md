@@ -1,11 +1,9 @@
 ---
 layout: post
 title: Learning Ruby
-categories:
-- posts
-tags:
-- ruby
-- Launch Academy
+categories: posts
+date: 2013-11-23 11:00:00
+summary: In the days leading up to teaching 6th grade Math Problem Solving, I met with the teacher that I was replacing. During our lunch chat, she told me a mantra that she uses in her classroom:"learning is about being wrong before being right."
 ---
 
 In the days leading up to teaching 6th grade Math Problem Solving, I met with the teacher that I was replacing. During our lunch chat, she told me a mantra that she uses in her classroom: _\"learning is about being wrong before being right.\"_ You cannot learn something new if you already know what you are doing. You must first not know what you are doing before mastering something.

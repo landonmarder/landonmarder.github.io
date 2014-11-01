@@ -1,11 +1,9 @@
 ---
 layout: post
 title: Common Core Mastery Tracker PhoneGap App
-categories:
-- posts
-tags:
-- phonegap
-- edtech
+categories: posts
+date: 2014-02-22 11:00:00
+summary: I made my first iPhone App this past week. It is an app for 6th grade students to log in and track their mastery on 6th grade math standards. Because it pulls the standards from the Common Core API, any 6th grade math classroom that is aligned with the Common Core can use it.
 ---
 
 I made my first iPhone App this past week. It is an app for 6th grade students to log in and track their mastery on 6th grade math standards. Because it pulls the standards from the Common Core API, any 6th grade math classroom that is aligned with the Common Core can use it. The high level overview of the app is that a student logs in and sees a list of all 6th grade math standards. The student can use the search box to find the standard he/she is using or can scroll down to find it. Once the student finds the standard he/she is learning, they can swipe the standard to enter in his/her mastery. Once you enter your mastery, you are taken to your completed standards page where you can see your results for past standards (color coded based on score range) and your overall mastery.

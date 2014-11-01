@@ -1,11 +1,9 @@
 ---
 layout: post
 title: Using Google Spreadsheets with Middleman as a faux backend
-categories:
-- posts
-tags:
-- middleman
-- google drive
+categories: posts
+date: 2014-03-22 11:00:00
+summary: Middleman is a great tool to create a static website, but still have some things that you can take for granted with the Rails framework. Namely, you can use Ruby, ERB tags, SASS, and you can deploy quickly to heroku. Also, a big strength (but also a weakness) of Middleman is that it limits the extent of what you can do, so it makes sure that what you are doing is purposeful so that you do not create technical debt.
 ---
 
 [Middleman](http://middlemanapp.com/) is a great tool to create a static website, but still have some things that you can take for granted with the Rails framework. Namely, you can use Ruby, ERB tags, SASS, and you can deploy quickly to heroku. Also, a big strength (but also a weakness) of Middleman is that it limits the extent of what you can do, so it makes sure that what you are doing is purposeful so that you do not create technical debt.

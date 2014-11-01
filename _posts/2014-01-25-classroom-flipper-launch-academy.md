@@ -1,13 +1,9 @@
 ---
 layout: post
 title: Introduction to the Classroom Flipper
-categories:
-- posts
-tags:
-- ruby
-- rails
-- launchacademy
-- edtech
+categories: posts
+date: 2014-01-25 11:00:00
+summary: For my breakable toy, I created a way for teachers to assign a video and an assessment for homework and then have student analytics from the assessment to better inform instructional decisions in the classroom to make class time more purposeful.
 ---
 
 My breakable toy is officially complete!* For my breakable toy, I created a way for teachers to assign a video and an assessment for homework and then have student analytics from the assessment to better inform instructional decisions in the classroom to make class time more purposeful. [Check it out](http://classroom-flipper.herokuapp.com/) or check out the [code](https://github.com/landonmarder/classroom\\_flipper).
