@@ -3,7 +3,7 @@ layout: post
 title: Using a styleguide to take ownership of a website's style
 categories: posts
 date: 2014-05-11 11:00:00
-summary: One of the biggest challenges of starting to work on a code base with an already defined style is figuring out and keeping track of all the styles created before me. For example, at [Work-Bench](http://www.work-bench.com/), there are over 12 colors beings used, three types of fonts, and multiple combinations throughout. As a developer diving in, it's extremely overwhelming.
+summary: One of the biggest challenges of starting to work on a code base with an already defined style is figuring out and keeping track of all the styles created before me. For example, at Work-Bench, there are over 12 colors beings used, three types of fonts, and multiple combinations throughout. As a developer diving in, it's extremely overwhelming.
 ---
 
 One of the biggest challenges of starting to work on a code base with an already defined style is figuring out and keeping track of all the styles created before me. For example, at [Work-Bench](http://www.work-bench.com/), there are over 12 colors beings used, three types of fonts, and multiple combinations throughout. As a developer diving in, it's extremely overwhelming.
