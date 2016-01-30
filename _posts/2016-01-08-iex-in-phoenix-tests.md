@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using IEx.pry to Help Test Phoenix Apps
+title: Using Pry to Help Test Phoenix Apps
 categories: posts
 date: 2016-01-08 11:00:00
 summary: How I use pry when I test my Phoenix apps.
