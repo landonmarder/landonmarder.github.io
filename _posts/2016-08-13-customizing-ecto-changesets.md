@@ -56,12 +56,9 @@ We cast the `name` field and the changeset function will return:
 constraints: [], errors: [], filters: %{} ...}
 {% endhighlight %}
 
-Looking at the above code, we can see a couple of things that will be interesting
-to build off of. We see `changes: %{name: "Michael Jordan"}` and we see `constraints: [], errors: []`.
-
-We can build off this information to make our changeset more powerful for
-constraining and validating the data that we want to insert into the database because the changeset
-stores whether or not there are constraints or validation errors based off our changes.
+Note how the `constraints` and `errors` are empty! This means that the data we
+are passing into the changeset is valid. We will have to add code to our changeset
+so that if the data is not valid, the changeset populate the `constraints` or `errors`.
 
 **Adding A Built-In Constraint**
 
@@ -80,7 +77,7 @@ def changeset(model, params \\ :empty) do
 end
 {% endhighlight %}
 
-And if we now try to insert a new user with the name "Michael Jordan", the changeset
+And if we now try to insert a new user with the name `Michael Jordan`, the changeset
 will look like this:
 
 {% highlight elixir %}
@@ -96,9 +93,9 @@ it will not insert the data and instead will return `{:error, _}`.
 **Adding a Custom Constraint**
 
 We can also build our own validations if the ones that Ecto provides out of the box
-are not enough. For example, let's say that we want to validate the uniqueness of
-all names, but for some reason, we do not want to validate the uniquess of name if the name is "Michael Jordan".
-We are okay with as many users as possible with the name "Michael Jordan", but only "Michael Jordan"
+are insufficient. For example, let's say that we want to validate the uniqueness of
+all names, but for some reason, we do not want to validate the uniquess of name if the name is `Michael Jordan`.
+We are okay with as many users as possible with the name `Michael Jordan`, but only `Michael Jordan`
 (I know, a silly example :smile:).
 
 {% highlight elixir %}
@@ -121,10 +118,10 @@ defp special_unique_name_validation(changeset) do
 end
 {% endhighlight %}
 
-In the above example, include a new private function `special_validate_unique_name`
-in the changeset and pass the changeset into it. Inside the function get the name from the changeset
-and see if the name is "Michael Jordan." If the name is "Michael Jordan", then we do
-nothing and pass the changeset through. If the name is not "Michael Jordan", we take
+In the above example, we include a new private function `special_validate_unique_name`
+in the changeset and pass the changeset into it. Inside the function, we get the name from the changeset
+and see if the name is `Michael Jordan`. If the name is `Michael Jordan`, then we do
+nothing and pass the changeset through. If the name is not `Michael Jordan`, we take
 the changeset and add a unique constraint to it for the name.
 
 {% highlight elixir %}
@@ -150,7 +147,7 @@ def changeset(model, params \\ :empty) do
 end
 {% endhighlight %}
 
-Trying to insert a user with name longer than 20 characters with the changeset function
+Trying to insert a user with a name longer than 20 characters with the changeset function
 will yield the following changeset:
 
 {% highlight elixir %}
