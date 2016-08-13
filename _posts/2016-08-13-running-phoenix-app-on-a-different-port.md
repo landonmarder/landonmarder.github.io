@@ -20,7 +20,7 @@ using http on port 4000
 {% endhighlight %}
 
 That didn't work, so I [dove into the docs](https://hexdocs.pm/phoenix/Mix.Tasks.Phoenix.Server.html)
-to see what I could do with `mix phoenix.server`. Unfortunately, there is no command-line
+to see what I could do with `mix phoenix.server`. Unfortunately, there are no command-line
 arguments for passing in the port.
 
 Doing more Internet research, I saw a suggestion by Chris McCord about how to override
@@ -29,7 +29,7 @@ the default port of 4000 on a Phoenix App [here](https://github.com/phoenixframe
 There are two solutions to override the default port of 4000. The solution you pick
 depends on what you need.
 
-*Solution 1: Replace the hardcoded port in config/dev.exs with a new port number*
+**Solution 1: Replace the hardcoded port in config/dev.exs with a new port number**
 
 Looking at a sample app, port is [hardcoded as 4000](https://github.com/phoenix-examples/hello_phoenix/blob/master/config/dev.exs#L10).
 You can change this to `4001` and running `mix phoenix.server` will start your app on `port 4001`
@@ -46,14 +46,14 @@ using http on port 4001
 This solution works if you know you want to run a specific app on a specific port
 every single time and keeps your starting command neat.
 
-*Solution 2: Dynamically override the port in config/dev.exs with an environment variable*
+**Solution 2: Dynamically override the port in config/dev.exs with an environment variable**
 
 To take this one step further, you can have use an environment variable to set the
 port. To do this, you can replace [4000 here](https://github.com/phoenix-examples/hello_phoenix/blob/master/config/dev.exs#L10) like
 this:
 
 {% highlight elixir %}
-http: [port: System.get_env("PORT") || 4000],
+http: [port: System.get_env("PORT") || 4000]
 {% endhighlight %}
 
 And then, when running your Phoenix server, you can do the following:
