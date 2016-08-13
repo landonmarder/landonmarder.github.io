@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing Ecto Changesets to Validate Data in a Phoenix App
+title: Customizing Ecto Changesets to Validate Data
 categories: posts
 date: 2016-08-13 11:15:00
 summary: Ecto Changesets are a powerful way to validate the data before inserting it into the database
