@@ -48,7 +48,7 @@ every single time and keeps your starting command neat.
 
 **Solution 2: Dynamically override the port in config/dev.exs with an environment variable**
 
-To take this one step further, you can have use an environment variable to set the
+To take this one step further, you can use an environment variable to set the
 port. To do this, you can replace [4000 here](https://github.com/phoenix-examples/hello_phoenix/blob/master/config/dev.exs#L10) like
 this:
 
