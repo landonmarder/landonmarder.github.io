@@ -9,7 +9,7 @@ summary: Ecto Changesets are a powerful way to validate data before inserting it
 Ecto changesets help us cast, validate, filter, and manipulate data.
 This post will walk through how to leverage Ecto changesets to validate data
 before we insert it into the database to ensure data integrity.
-For example purposes, let's say that in our app, we can create a user with a name,
+For example, let's say that in our app, we can create a user with a name,
 but we want to validate the name before we insert it into the database.
 
 Before diving into what Ecto changesets can do to validate our data,
