@@ -56,9 +56,9 @@ We cast the `name` field and the changeset function will return:
 constraints: [], errors: [], filters: %{} ...}
 {% endhighlight %}
 
-Note how the `constraints` and `errors` are empty! This means the changeset is saying
-the changes are. We will have to add code to our changeset
-so that if the changes are not valid, the changeset will populate the `constraints` or `errors`.
+Note how the `constraints` and `errors` are empty! This means the
+the changes are valid. We will have to add code to our changeset
+so that if the changes are not valid, the changeset will tell us in `constraints` or `errors`.
 
 **Adding A Built-In Constraint**
 
