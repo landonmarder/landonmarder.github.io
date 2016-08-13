@@ -55,10 +55,11 @@ end
 The code looks at the JSON from my request and sanitizes it so that it can be
 nicely inserted into the database later on. The problem with this code (and why Elixir 1.3 has
 a deprecation warning about it), is that it implicitly changes the value of `my_params`
-inside of the if block and the `my_params` variable is being accessed in an outer scope. This
-is not very functional and can lead to unintended consequences.
+inside of the if block and `my_params` is being accessed outside of this scope.
+This is not very functional and can lead to unintended consequences.
 
-To fix this, Elixir prefers that I explicitly return the variable that is changing.
+To fix this, Elixir prefers that I explicitly return the variable that is changing
+so that it can be safely used outside of the scope.
 
 The fix code is below:
 
