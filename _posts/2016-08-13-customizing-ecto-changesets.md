@@ -6,10 +6,10 @@ date: 2016-08-13 11:15:00
 summary: Ecto Changesets are a powerful way to validate data before inserting it into the database
 ---
 
-Ecto changesets help us cast, validate, filter, and manipulate the data.
-This post will walk through how to leverage Ecto changesets to validate the data
+Ecto changesets help us cast, validate, filter, and manipulate data.
+This post will walk through how to leverage Ecto changesets to validate data
 before we insert it into the database to ensure data integrity.
-For example purposes, lets say that in our app, we can create a user with a name,
+For example purposes, let's say that in our app, we can create a user with a name,
 but we want to validate the name before we insert it into the database.
 
 Before diving into what Ecto changesets can do to validate our data,
@@ -58,15 +58,14 @@ constraints: [], errors: [], filters: %{} ...}
 
 Looking at the above code, we can see a couple of things that will be interesting
 to build off of. We see `changes: %{name: "Michael Jordan"}` and we see `constraints: [], errors: []`.
-This records the fields that we are changing and tells us that there are no
-constraints or errors coming from the changes that we are passing in.
 
 We can build off this information to make our changeset more powerful for
-constraining and validating the data that we want to insert into the database.
+constraining and validating the data that we want to insert into the database because the changeset
+stores whether or not there are constraints or validation errors based off our changes.
 
 **Adding A Built-In Constraint**
 
-Lets say that we want to add a constraint that the name needs to be unique. We cannot
+Let's say that we want to add a constraint that the name needs to be unique. We cannot
 have two users with the same name because that will be confusing. Luckily, Ecto has
 [built in constraint](https://hexdocs.pm/ecto/Ecto.Changeset.html)
 that we can take advantage of.
